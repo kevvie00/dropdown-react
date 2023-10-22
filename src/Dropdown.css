@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  width: 200px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dropdownMenu {
+  align-items: center;
+  width: 200px;
+}
+
+.dropdownList {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.selectDeselect {
+  width: 1px;
+  height: 10px;
+}
+
+.hiddenList {
+  display: none;
+  pointer-events: none;
+}
+
+.dropdown {
+  position: absolute;
+}
+
+.dropdownItem:hover {
+  background-color: gray;
+}
+
+.selectedItem {
+  background-color: lightblue;
+}
+
+#search {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+#selectDeselect {
+  width: 100px;
+}
+
+#search.active {
+  border: 1px solid blue;
+}
+
+.dropdownLogo {
+  margin-left: 90%;
+  max-height: 20px;
+  transition: transform 0.2s;
+}
+
+.dropdownLogo.invert {
+  transform: scaleY(-1); /* Flip the image vertically (upside down) */
+}
